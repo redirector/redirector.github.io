@@ -1,5 +1,5 @@
-var studioid = 1788915;
-var curators = ["technoboy10", "The_Grits", "4LeafClovR", "puppymk", "Malik44", "CrazyNimbus", "fmtfmtfmt2", "GreenIeaf", "st19_galla", "joletole", "Hamish752", "ceebee", "speakvisually"];
+var studioid = 146521;
+var curators = ["gobo","scmb1*","P110","LiFaytheGoblin*","cheddargirl*","ricarose*","EH7meow","dolphingirl36","CrazyNimbus","ZaharaMar","Really_A","chacharosie8888","Hamish752","amateurradiogeek15","Denciethepenguin"];
 var count = 0;
 function getUnread(page){
   var commentList;
@@ -35,11 +35,10 @@ function getUnread(page){
     var replyList = commentList[i].querySelectorAll('.reply > .comment'); //Get all comments
     for (j = 0; j < replyList.length; j++){ //go through replies
       if(curators.indexOf(replyList[j].querySelector(".info > .name > a").innerHTML) != -1){ //pick comment by a curator
-        if (replyList[j].querySelector(".info > .content").textContent.match(/added/i)){
-          lastReply = i;
-          tempCount--;
-          break;
-        }
+        lastReply = i;
+        tempCount--;
+        break;
+        
       }
     }
   }
@@ -61,7 +60,7 @@ function changeLink(link){
 }
 
 function changecount(count){
-  document.getElementById("projectcount").innerHTML = count + " projects left to review!";
+  document.getElementById("projectcount").innerHTML = count + " projects left review or add to the spreadsheet!";
 
 }
 
