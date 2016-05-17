@@ -1,5 +1,5 @@
-var studioid = 146521;
-var curators = ["gobo","scmb1*","P110","LiFaytheGoblin*","cheddargirl*","ricarose*","EH7meow","dolphingirl36","CrazyNimbus","ZaharaMar","Really_A","chacharosie8888","Hamish752","amateurradiogeek15","Denciethepenguin"];
+var studioid = 386359;
+var curators = ["speakvisually*", "ceebee*", "Unrealisation", "puppymk", "technoboy10", "The_Grits", "CrazyNumbus", "GreenIeaf", "Malik44", "Ionosphere", "fmtfmtfmt2", "st19_galla", "Hamish752", "4LeafClovR", "ItchyCatIII"];
 var count = 0;
 function getUnread(page){
   var commentList;
